@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+}
+body {
+    background: #f1f1f1;
+    color: #919191b3;
+    box-sizing: border-box;
+}
+h1,h2,h3 {
+    font-family: Arial, sans-serif;
+}
+ul.people-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-size: 14px;
+}
+ul.people-list h3 {
+    vertical-align: middle;
+    font-size: 0.85em;
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 0 0 0;
+    width: calc(100% - 70px);
+}
+
+.search-form {
+    padding-top: 40px;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+.search {
+    width: 100%;
+    padding: 0 80px 0 10px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    font-size: 94px;
+    color: #c2c2c2;
+    font-family: Arial, sans-serif;
+}
+
+.column {
+    display: inline-block;
+    width: 30%;
+    padding: 0 0 6em;
+}
+li {
+    text-align: center;
+    width: 70%;
+}
+.circle {
+    border-radius: 50%;
+}
+.people-list a {
+    padding: 0.75em;
+    display: block;
+    margin: 0.3em 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(118,117,128,0.05);
+    color: rgba(145,145,145,0.7);
+}
+
+.people-list img {
+    display: inline-block;
+    width: 50px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+.people-list a:hover{
+    background-color: rgba(118,117,128,0.1);
+    color: #ec5a62;
+}
+.people-list p:hover{
+    color:#ec5a62;
+}
+div.main-content {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 10%;
+}
+.search-submit {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    text-indent: 100px;
+    overflow: hidden;
+    right: 0;
+    top: 60%;
+    background: transparent url(../img/magnifier.svg) no-repeat center center;
+    background-size: 100%;
+    border: none;
+    transform-origin: 100% 50%;
+    -webkit-transform: translate3d(0,-50%,0) scale(1);
+    transform: translate3d(0,-50%,0) scale(1);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+input::-webkit-input-placeholder {
+color: #c2c2c2;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #c2c2c2;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #c2c2c2;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #c2c2c2;  
+}
+
