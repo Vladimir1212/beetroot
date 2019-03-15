@@ -1,0 +1,375 @@
+body {
+    width: 100%;
+}
+
+.board {
+    position: relative;
+    background: gray;
+    width: 800px;
+    height: 800px;
+    border: 2px solid;
+    border-color: black;
+    margin: 0 auto;
+}
+.checker {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border: none;
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+    font: normal 16px/1 "Times New Roman", Times, serif;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: -webkit-radial-gradient(closest-side, rgba(220,220,220,1) 0, rgba(139,140,126,1) 100%, rgba(124,188,10,1) 100%);
+    background: -moz-radial-gradient(closest-side, rgba(220,220,220,1) 0, rgba(139,140,126,1) 100%, rgba(124,188,10,1) 100%);
+    background: radial-gradient(closest-side, rgba(220,220,220,1) 0, rgba(139,140,126,1) 100%, rgba(124,188,10,1) 100%);
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    -webkit-transform: rotateZ(0.5729577951308232deg)   ;
+    transform: rotateZ(0.5729577951308232deg)   ;
+}
+.checker-1 {
+    left: 10px;
+    top: 10px;
+}
+
+
+.section {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.section-1 {
+    background: #FFE4B5;
+}
+.section-2 {
+    background: #8B4513;
+    left: 100px;
+}
+.section-3 {
+    background: #FFE4B5;
+    left: 200px;
+}
+.section-4 {
+    background: #8B4513;
+    left: 300px;
+}
+.section-5 {
+    background: #FFE4B5;
+    left: 400px;
+}
+.section-6 {
+    background: #8B4513;
+    left: 500px;
+}
+.section-7 {
+    background: #FFE4B5;
+    left: 600px;
+}
+.section-8 {
+    background: #8B4513;
+    left: 700px;
+}
+
+
+.section-9 {
+    background: #8B4513;
+    top: 100px;
+}
+.section-10 {
+    background: #FFE4B5;
+    top: 100px;
+    left: 100px;
+}
+.section-11 {
+    background: #8B4513;
+    top: 100px;
+    left: 200px;
+}
+.section-12 {
+    background: #FFE4B5;
+    top: 100px;
+    left: 300px;
+}
+.section-13 {
+    background: #8B4513;
+    top: 100px;
+    left: 400px;
+}
+.section-14 {
+    background: #FFE4B5;
+    top: 100px;
+    left: 500px;
+}
+.section-15 {
+    background: #8B4513;
+    top: 100px;
+    left: 600px;
+}
+.section-16 {
+    background: #FFE4B5;
+    top: 100px;
+    left: 700px;
+}
+
+.section-17 {
+    background: #FFE4B5;
+    top: 200px;
+}
+.section-18 {
+    background: #8B4513;
+    top: 200px;
+    left: 100px;
+}
+.section-19 {
+    background: #FFE4B5;
+    top: 200px;
+    left: 200px;
+}
+.section-20 {
+    background: #8B4513;
+    top: 200px;
+    left: 300px;
+}
+.section-21 {
+    background: #FFE4B5;
+    top: 200px;
+    left: 400px;
+}
+.section-22 {
+    background: #8B4513;
+    top: 200px;
+    left: 500px;
+}
+.section-23 {
+    background: #FFE4B5;
+    top: 200px;
+    left: 600px;
+}
+.section-24 {
+    background: #8B4513;
+    top: 200px;
+    left: 700px;
+}
+
+
+.section-25 {
+    background: #8B4513;
+    top: 300px;
+}
+.section-26 {
+    background: #FFE4B5;
+    top: 300px;
+    left: 100px;
+}
+.section-27 {
+    background: #8B4513;
+    top: 300px;
+    left: 200px;
+}
+.section-28 {
+    background: #FFE4B5;
+    top: 300px;
+    left: 300px;
+}
+.section-29 {
+    background: #8B4513;
+    top: 300px;
+    left: 400px;
+}
+.section-30 {
+    background: #FFE4B5;
+    top: 300px;
+    left: 500px;
+}
+.section-31 {
+    background: #8B4513;
+    top: 300px;
+    left: 600px;
+}
+.section-32 {
+    background: #FFE4B5;
+    top: 300px;
+    left: 700px;
+}
+
+.section-33 {
+    background: #FFE4B5;
+    top: 400px;
+}
+.section-34 {
+    background: #8B4513;
+    top: 400px;
+    left: 100px;
+}
+.section-35 {
+    background: #FFE4B5;
+    top: 400px;
+    left: 200px;
+}
+.section-36 {
+    background: #8B4513;
+    top: 400px;
+    left: 300px;
+}
+.section-37 {
+    background: #FFE4B5;
+    top: 400px;
+    left: 400px;
+}
+.section-38 {
+    background: #8B4513;
+    top: 400px;
+    left: 500px;
+}
+.section-39 {
+    background: #FFE4B5;
+    top: 400px;
+    left: 600px;
+}
+.section-40 {
+    background: #8B4513;
+    top: 400px;
+    left: 700px;
+}
+
+
+
+.section-41 {
+    background: #8B4513;
+    top: 500px;
+}
+.section-42 {
+    background: #FFE4B5;
+    top: 500px;
+    left: 100px;
+}
+.section-43 {
+    background: #8B4513;
+    top: 500px;
+    left: 200px;
+}
+.section-44 {
+    background: #FFE4B5;
+    top: 500px;
+    left: 300px;
+}
+.section-45 {
+    background: #8B4513;
+    top: 500px;
+    left: 400px;
+}
+.section-46 {
+    background: #FFE4B5;
+    top: 500px;
+    left: 500px;
+}
+.section-47 {
+    background: #8B4513;
+    top: 500px;
+    left: 600px;
+}
+.section-48 {
+    background: #FFE4B5;
+    top: 500px;
+    left: 700px;
+}
+
+
+.section-49 {
+    background: #FFE4B5;
+    top: 600px;
+}
+.section-50 {
+    background: #8B4513;
+    top: 600px;
+    left: 100px;
+}
+.section-51 {
+    background: #FFE4B5;
+    top: 600px;
+    left: 200px;
+}
+.section-52 {
+    background: #8B4513;
+    top: 600px;
+    left: 300px;
+}
+.section-53 {
+    background: #FFE4B5;
+    top: 600px;
+    left: 400px;
+}
+.section-54 {
+    background: #8B4513;
+    top: 600px;
+    left: 500px;
+}
+.section-55 {
+    background: #FFE4B5;
+    top: 600px;
+    left: 600px;
+}
+.section-56 {
+    background: #8B4513;
+    top: 600px;
+    left: 700px;
+}
+
+
+.section-57 {
+    background: #8B4513;
+    top: 700px;
+}
+.section-58 {
+    background: #FFE4B5;
+    top: 700px;
+    left: 100px;
+}
+.section-59 {
+    background: #8B4513;
+    top: 700px;
+    left: 200px;
+}
+.section-60 {
+    background: #FFE4B5;
+    top: 700px;
+    left: 300px;
+}
+.section-61 {
+    background: #8B4513;
+    top: 700px;
+    left: 400px;
+}
+.section-62 {
+    background: #FFE4B5;
+    top: 700px;
+    left: 500px;
+}
+.section-63 {
+    background: #8B4513;
+    top: 700px;
+    left: 600px;
+}
+.section-64 {
+    background: #FFE4B5;
+    top: 700px;
+    left: 700px;
+}
+
+
+
+
+
+
