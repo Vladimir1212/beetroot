@@ -1,0 +1,26 @@
+include bem/header/header.pug
+include bem/menu/menu.pug
+include bem/section-chose/section-chose.pug
+include bem/booking/booking.pug
+include bem/presentation/presentation.pug
+include bem/presentation-invert/presentation-invert.pug
+include bem/testimonial/testimonial.pug
+include bem/footer/footer.pug
+
+doctype html
+html(lang='en')
+  head
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css')
+    link(rel='stylesheet', href='styles.css')
+    link(href='https://fonts.googleapis.com/css?family=Aleo:300,400,700|Josefin+Sans:100,300,400,700', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    title Travel
+  body
+   +header()
+   +menu()
+   +section-chose()
+   +booking()
+   +presentation()
+   +presentation-invert()
+   +testimonial()
+   +footer()
