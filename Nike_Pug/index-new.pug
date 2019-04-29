@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Nike
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='icon', href='favicon.png')
+  body
+    .layout
+      .layout_item
+        header.header
+          img.header_logo(src='img/logo.png', alt='')
+          nav.header_nav
+            a.header_link(href='#') Lifestyle
+            a.header_link(href='#') Running
+            a.header_link(href='#') Football
+            a.header_link(href='#') Skateboarding
+          svg.header_menu(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='22px', height='13px')
+            path(fill-rule='evenodd', fill='rgb(255, 255, 255)', d='M-0.000,13.000 L-0.000,12.000 L22.000,12.000 L22.000,13.000 L-0.000,13.000 ZM-0.000,6.000 L22.000,6.000 L22.000,7.000 L-0.000,7.000 L-0.000,6.000 ZM-0.000,-0.000 L22.000,-0.000 L22.000,1.000 L-0.000,1.000 L-0.000,-0.000 Z')
+      .layout_item
+        section.product
+          main.product_main
+            h1.product_title Huarache
+            .product_picture-wrap
+              img.product_picture(src='img/sneacker.png', alt='')
+            .product_thumbnail-list
+              img.product_thumbnail(src='img/sneaker_thumb-1.png', alt='')
+              img.product_thumbnail(src='img/sneaker_thumb-2.png', alt='')
+              img.product_thumbnail(src='img/sneaker_thumb-3.png', alt='')
+          aside.product_info
+            .product_line
+              span.close
+            .product_line
+              .label.label__new New
+            .product_line.product_line__baby
+              .h1
+                | the 
+                strong.h1_strong running
+                |  has just begun
+            .product_line
+              .rang
+                span.rang_text Huarache
+                span.rang_stars
+                span.rang_stars
+                span.rang_stars
+                span.rang_stars
+                span.rang_stars
+            .product_line.order__margin
+              .product_order 200
+            .product_line
+              .size
+                .size_caption Size
+                .size_list
+                  .size_item
+                    button.button.button__count 7
+                  .size_item
+                    button.button.button__count 8
+                  .size_item
+                    button.button.button__count.button__active 10
+                  .size_item
+                    button.button.button__count 9
+                  .size_item
+                    button.button.button__count 7
+            .product_line
+              button.button.button__buy Add to cart
+            .product_line
+              button.button Wishlist
