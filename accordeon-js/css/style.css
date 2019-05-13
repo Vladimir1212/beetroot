@@ -1,0 +1,97 @@
+@font-face {
+font-family: "JFFlatRegular"; 
+src: url("font/JF-Flat-regular.woff"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+body {
+    background-color: #f6704b;
+    height: 100%;
+}
+h1 {
+    font-family: "JFFlatRegular";
+    font-size: 24px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+.h1-loc {
+    color: #ffe9c1;
+}
+.h1-mus{
+    color: #e4b169;
+}
+.h1-notes {
+    color: #620808;
+}
+.h1-books {
+    color: #a53f3f;
+}
+.h1-ten {
+    color: #ffe9c1;
+}
+p {
+    font-family: "JFFlatRegular";
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+img {
+    margin: 10px;
+}
+.acc_head {
+    display: flex;
+}
+.acc_head-location {
+    background: #620808;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.acc_head-music {
+    background: #a53f3f;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.acc_head-notes {
+    background: #f4ce74;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.acc_head-books {
+    background: #ffe9c1;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.acc_head-tendances {
+    background: #d5441c;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#accordeon {
+    width: 380px;
+    margin: 0 auto;
+}
+.acc-body {
+    display: none;
+}
+.acc_body-location {
+    background: #620808;
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.79);
+}
+.acc_body-music {
+    background: #a53f3f;
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.79);
+}
+.acc_body-notes {
+    background: #f4ce74;
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.79);
+}
+.acc_body-books {
+    background: #ffe9c1;
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.79);
+}
+.acc_body-tendances {
+    background: #d5441c;
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.79);
+}
+
+
