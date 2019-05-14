@@ -11,7 +11,7 @@ $(function() {
         return false;
     }).filter(':first').click();
 
-    // Клики по якорным ссылкам.
+    
     $('.tabs-target').click(function(){
         $('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
     });
