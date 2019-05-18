@@ -1,0 +1,25 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    font-size: 14px;
+}
+
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.violet {
+    
+}
