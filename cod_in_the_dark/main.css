@@ -1,25 +1,22 @@
-
 .container {
+    background-color: grey;
+    width: 500px;
+    height: 600px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-.btn {
-    font-size: 14px;
+    align-items: center;
+    margin: 20px;
 }
 
-.blue {
-    background-color: blue;
+.btn {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-color: lightgray;
+    border-width: 5px;
+    background-color: white;
+    margin: 20px;
 }
-.green {
-    background-color: green;
-}
-.yellow {
-    background-color: yellow;
-}
-.red {
-    background-color: red;
-}
-.violet {
-    
+.btn_active {
+
 }
