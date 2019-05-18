@@ -1,22 +1,17 @@
-.container {
-    background-color: grey;
-    width: 500px;
-    height: 600px;
+body {
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+    justify-content: space-between;
 }
-
-.btn {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    border-color: lightgray;
-    border-width: 5px;
-    background-color: white;
-    margin: 20px;
+.navigation {
+    display: flex;
+    text-decoration: none;
 }
-.btn_active {
-
+h1,h2,p {
+    color: white;
 }
