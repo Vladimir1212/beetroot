@@ -1,0 +1,104 @@
+.about {
+    width: 100%;
+    background-color: white;
+    &_sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 70px;
+        &__reverse {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-right: 70px;
+        }
+    }
+}
+hr {
+    width: 100px;
+    border: 1px solid #2c4058;
+    margin-bottom: 40px;
+}
+.about_title-main {
+    font-family: "GothamBold";
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #2c4058;
+    text-align: center;
+}
+.about_card {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    &_img {
+        z-index: 3;
+        position: relative;
+    }
+    &_title {
+        font-family: "GothamBook";
+        color: #2c4058;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    &_type {
+        font-family: "GothamBold";
+        text-transform: uppercase;
+        font-size: 44px;
+        color: #2c4058;
+    }
+    &_description {
+        font-family: 'Open Sans', sans-serif;
+        color: #2c4058;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+.btn {
+        display: inline-block;
+        box-sizing: content-box;cursor: pointer;
+        padding: 10px 30px;
+        border: 1px solid #2c4058;
+        font: normal 14px/normal "Open Sans", sans-serif;
+        text-transform: uppercase;
+        color: #2c4058;
+        transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.fa-map-marker-alt {
+    color: #2c4058;
+}
+.back {
+    background-color: #55b7ff;
+    position: absolute;
+    left: 0px;
+    top: 936px;
+    width: 531px;
+    height: 470px;
+}
+.back_reverse {
+  background-color: #7e5aff;
+    position: absolute;
+    left: 792px;
+    top: 1610px;
+    width: 585px;
+    height: 470px;
+
+}
+.about_card_geo {
+    display: flex;
+    align-items: flex-end;
+    &_adress {
+        font-family: 'Open Sans';
+        font-style: italic;
+        padding-left: 15px;
+    }
+}
+.about_card_reverse {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.about_card_img__reverse {
+    z-index: 3;
+        position: relative;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      var map;
+      function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 40.681424, lng: -73.880462},
+      zoom: 16
+      });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsACnS_tc0Ipwf8rP8SKboS9AXu7ukPIQ&amp;callback=initMap" async="" defer=""></script>
+    <title>Montecillo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="layout">
+        <div class="layout_line"></div>
+        <div class="navigation"><img src="../img/logo.svg"/>
+          <div class="navigation_menu"><a class="nav_link" href="#about">
+              <div class="round"></div>About Us</a><a class="nav_link" href="#projects">
+              <div class="round"></div>Projects</a><a class="nav_link" href="#news">
+              <div class="round"></div>News</a><a class="nav_link" href="#contact">
+              <div class="round"></div>Contact</a></div>
+          <div class="navigation_social">
+            <div class="circle"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="circle"><a href="#"><i class="fab fa-twitter"></i></a></div>
+            <div class="circle"><a href="#"><i class="fab fa-instagram"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout_height"></div>
+      <div class="layout_head">
+        <div class="empty"></div>
+        <div class="header_title">
+          <h1 class="header_title-main">Simple & Modern</h1>
+          <h2 class="header_title-sub">we make the world's beautiful every day</h2>
+        </div>
+        <div class="header_aside"><a class="nav_link" href="#">
+            <div class="round"></div></a><a class="nav_link" href="#">
+            <div class="round"></div></a><a class="nav_link" href="#">
+            <div class="round"></div></a><a class="nav_link" href="#">
+            <div class="round"></div></a><a class="nav_link" href="#">
+            <div class="round"></div></a></div>
+      </div>
+      <div class="layout_height"></div>
+      <div class="circle__footer"><a href="#"><i class="fas fa-chevron-down"></i></a></div>
+    </header>
+    <section class="about" id="about">
+      <div class="layout_line"></div>
+      <div class="about_title">
+        <hr/>
+        <h1 class="about_title-main">What we do</h1>
+      </div>
+      <div class="layout_about"> </div>
+      <div class="about_card">
+        <div class="images">
+          <div class="about_card_img"><img src="../img/card.png"/></div>
+          <div class="back"></div>
+        </div>
+        <div class="about_sidebar">
+          <h2 class="about_card_title">One World</h2>
+          <h1 class="about_card_type">Trade Center</h1>
+          <p class="about_card_description">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+          <div class="button">
+            <button class="btn">More Details</button>
+          </div>
+          <div class="about_card_geo">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p class="about_card_geo_adress">New York City, United States - 1776 feet</p>
+          </div>
+        </div>
+      </div>
+      <div class="layout_height"></div>
+      <div class="about_card_reverse">
+        <div class="images">
+          <div class="about_card_img__reverse"><img src="../img/card_reverse.png"/></div>
+          <div class="back_reverse"></div>
+        </div>
+        <div class="about_sidebar__reverse">
+          <h2 class="about_card_title">International</h2>
+          <h1 class="about_card_type">Commerce Centre</h1>
+          <p class="about_card_description">Successful businesses have many things in common, today we'll look at the big 'R' of recognition and how a digital advertising network may help.</p>
+          <div class="button">
+            <button class="btn">More Details</button>
+          </div>
+          <div class="about_card_geo">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <p class="about_card_geo_adress">Hong Kong - 1588 feet</p>
+          </div>
+        </div>
+      </div>
+      <div class="layout_down"> </div>
+    </section>
+    <section class="news" id="news">
+      <div class="layout_line"></div>
+      <div class="about_title">
+        <hr class="__reverse"/>
+        <h1 class="news_title-main">Latest News</h1>
+      </div>
+      <div class="layout">
+        <div class="layout_slider"></div>
+        <section class="regular slider">
+          <div class="slide_card"><img class="slider_img" src="../img/slide_1.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">See The Unmatched Beauty Of The Great. </h1>
+              <p class="slider_description">Free directories: directories are perfect for customers that are... searching for</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_1.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Isaac Dunn</p>
+                  <p class="slider_author_data">09 feb 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_card"><img class="slider_img" src="../img/slide_2.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">Effective Advertising Pointers.</h1>
+              <p class="slider_description">Having a home based business is a wonderful asset to your life...</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_2.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Dominic Freeman</p>
+                  <p class="slider_author_data">24 apr 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_card"><img class="slider_img" src="../img/slide_3.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">Hypnotize Yourself Into The Ghost.</h1>
+              <p class="slider_description">There are many things that are important to catalog design....</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_3.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Alice Ward</p>
+                  <p class="slider_author_data">30 dec 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_card"><img class="slider_img" src="../img/slide_3.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">Hypnotize Yourself Into The Ghost.</h1>
+              <p class="slider_description">There are many things that are important to catalog design....</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_3.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Alice Ward</p>
+                  <p class="slider_author_data">30 dec 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_card"><img class="slider_img" src="../img/slide_2.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">Effective Advertising Pointers.</h1>
+              <p class="slider_description">Having a home based business is a wonderful asset to your life...</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_2.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Dominic Freeman</p>
+                  <p class="slider_author_data">24 apr 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_card"><img class="slider_img" src="../img/slide_2.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">Effective Advertising Pointers.</h1>
+              <p class="slider_description">Having a home based business is a wonderful asset to your life...</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_2.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Dominic Freeman</p>
+                  <p class="slider_author_data">24 apr 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide_card"><img class="slider_img" src="../img/slide_2.png"/>
+            <div class="slider_body">
+              <h1 class="slider_title">Effective Advertising Pointers.</h1>
+              <p class="slider_description">Having a home based business is a wonderful asset to your life...</p>
+              <div class="slider_author"><img class="slider_author_img" src="../img/author_2.png"/>
+                <div class="slider_autor_wrap">
+                  <p class="slider_author_name">Dominic Freeman</p>
+                  <p class="slider_author_data">24 apr 2017</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+        </section>
+      </div>
+    </section>
+    <section class="gallery" id="projects">
+      <div class="layout_line"></div>
+      <div class="about_title">
+        <hr/>
+        <h1 class="about_title-main">Gallery</h1>
+        <div class="layout">
+          <div class="layout_slider"></div>
+          <div class="gallery_container">
+            <div class="gallery_main"><img class="img__s" src="../img/gallery_1.png"/>
+              <div class="img_360"></div>
+            </div>
+            <div class="gallery_aside"><img class="img__s" src="../img/gallery_2.png"/><img src="../img/gallery_3.png"/><img class="img__s" src="../img/gallery_4.png"/><img src="../img/gallery_5.png"/></div>
+          </div>
+          <div class="layout_line"></div>
+          <button class="btn__gallery">See More</button>
+          <div class="layout_down"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="ba-map" id="map"></div>
+    </footer>
+    <div class="feedback" id="contact">
+      <div class="layout_line"></div>
+      <div class="feedback_container">
+        <hr/>
+        <h1 class="about_title-main">Get in tourch</h1>
+        <div class="feedback_body">
+          <div class="feedback_info">
+            <div class="feedback_location">
+              <div class="icon"><i class="fas fa-map-marker-alt fa-map-marker-alt__footer"></i></div>
+              <p class="feedback_description">91 Nolan Extensions Suite 670</p>
+            </div>
+            <div class="feedback_tel">
+              <div class="icon"><i class="fas fa-phone"></i></div>
+              <p class="feedback_description">+001 356-868-2454</p>
+            </div>
+            <div class="feedback_email">
+              <div class="icon"><i class="fas fa-envelope-square"></i></div>
+              <p class="feedback_description">gahuy93@gmail.com</p>
+            </div>
+            <div class="feedback_time">
+              <div class="icon"><i class="fas fa-clock"></i></div>
+              <p class="feedback_description">From 07:05AM to 19:30PM</p>
+            </div>
+          </div>
+          <div class="feedback_form">
+            <p>
+              <input class="feedback_form_name" type="text" name="name" placeholder="Name"/>
+            </p>
+            <p>
+              <input class="feedback_form_email" type="email" name="email" placeholder="Email"/>
+            </p>
+            <button class="btn__footer">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="layout_height"></div>
+      <div class="copyright_wrap"><img src="../img/logo.svg"/>
+        <div class="navigation_social">
+          <div class="circle"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+          <div class="circle"><a href="#"><i class="fab fa-twitter"></i></a></div>
+          <div class="circle"><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
+      </div>
+      <div class="copyright_wrap__sub">
+        <p class="copyright_title">Copyrights © 2017 Monticello</p>
+        <p class="copyright_sub">Made with ♥ by Ga Huy</p>
+      </div>
+    </div>
+  </body>
+</html>

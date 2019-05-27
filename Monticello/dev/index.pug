@@ -1,0 +1,33 @@
+include bem/header/header.pug
+include bem/about/about.pug
+include bem/news/news.pug
+include bem/gallery/gallery.pug
+include bem/footer/footer.pug
+doctype html
+html(lang='en')
+  head
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css')
+    link(rel='stylesheet', href='styles.css')
+    link(rel='stylesheet', type='text/css', href='slick.css')
+    link(rel='stylesheet', type='text/css', href='slick-theme.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i&display=swap', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='slick.min.js')
+    script(src='script.js')
+    script.
+      var map;
+      function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 40.681424, lng: -73.880462},
+      zoom: 16
+      });
+      }
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCsACnS_tc0Ipwf8rP8SKboS9AXu7ukPIQ&callback=initMap', async='', defer='')
+    title Montecillo
+  body
+   +header()
+   +about()
+   +news()
+   +gallery()
+   +footer()
