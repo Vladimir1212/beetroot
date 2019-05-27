@@ -1,0 +1,57 @@
+@font-face {
+font-family: "GothamBook"; 
+src: url("../font-gotham/GothamBook.ttf"); 
+font-style: normal; 
+font-weight: normal;
+}
+@font-face {
+font-family: "GothamBold"; 
+src: url("../font-gotham/GothamBold.ttf"); 
+font-style: normal; 
+font-weight: normal;
+}
+body {
+    width: 100%;
+    min-width: 1140px;
+    background-color: white;
+}
+html {
+    overflow-x: hidden; 
+}
+
+.layout {
+    width: 1170px;
+    margin: 0 auto;
+    &_line {
+        height: 50px;
+    }
+    &_head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_down {
+        height: 140px;
+    }
+    &_height{
+        height: 200px;
+    }
+    &_about {
+        height: 170px;
+    }
+    &_slider {
+        height: 100px;
+    }
+}
+.copyright_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 30px;
+    &__sub {
+        display: flex;
+        width: 750px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+}
