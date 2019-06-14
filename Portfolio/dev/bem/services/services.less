@@ -1,0 +1,76 @@
+.services {
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../dev/img/services.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    &_title {
+        font-family: 'Lato', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 9px;
+        left: 100px;
+        top: 150px;
+    }
+    &_styleline {
+        border: none;
+        background-color: #ff4200; 
+        height: 2px; 
+        width: 120%;
+        margin-top: 30px;
+    }
+}
+.acc_title {
+        font-family: 'Lato', sans-serif;
+        font-size: 21px;
+        color: #737373;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+}
+.acc_title:hover {
+    color: #b3b3b3;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.acc_text {
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        color: #999999;
+        line-height: 1.5;
+}
+.acc_head {
+    display: flex;
+}
+.acc_head-location {
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.acc_head-music {
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.acc_head-notes {
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#accordeon {
+    width: 30%;
+}
+.acc-body {
+    display: none;
+}
+@media(max-width: 768px) {
+    .services_wrap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

@@ -1,0 +1,1 @@
+window.onload=function(){window.jQuery?alert("Yeah!"):alert("Doesn't Work")};
