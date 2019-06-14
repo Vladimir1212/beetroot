@@ -1,0 +1,153 @@
+.portfolio {
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../dev/img/portfolio.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    &_title {
+        font-family: 'Lato', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: 9px;
+        align-self: flex-start;
+    }
+    &_main {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1170px;
+    }
+    &_styleline {
+        border: none;
+        background-color: #ff4200; 
+        height: 2px; 
+        width: 120%;
+        margin-top: 30px;
+    }
+}
+.container {
+    display: flex;
+    padding-top: 70px;
+}
+.card_01 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url(../dev/img/card_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 10px;
+
+    transition: all 0.5s;
+
+    &:hover {
+        transform: translateY(-20px);
+        background-position: center 100%;
+        background-size: cover;
+
+        .card__button {
+            transform: translateY(0%);
+            color: #027090;
+
+            transition: all 0.5s;
+        }
+    }
+}
+.card_02 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url(../dev/img/card_2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 10px;
+
+    transition: all 0.3s;
+
+    &:hover {
+        transform: translateY(-20px);
+        background-position: center 100%;
+        background-size: cover;
+
+        .card__button {
+            transform: translateY(0%);
+            color: #027090;
+
+            transition: all 0.5s;
+        }
+    }
+}
+.card_03 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url(../dev/img/card_3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin: 10px;
+
+    transition: all 0.3s;
+
+    &:hover {
+        transform: translateY(-20px);
+        background-position: center 100%;
+        background-size: cover;
+
+        .card__button {
+            transform: translateY(0%);
+            color: #027090;
+
+            transition: all 0.5s;
+        }
+    }
+}
+.card__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 70px 10px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+@media(max-width: 900px) {
+    .container {
+        padding-top: 0px;
+        flex-direction: column;
+    }
+    .portfolio_main {
+        display: block;
+    }
+    }
+@media(max-width: 768px) {
+    .portfolio_wrap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

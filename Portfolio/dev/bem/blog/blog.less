@@ -1,0 +1,139 @@
+.blog {
+  background-color: #ffffff;
+  &_wrap {
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  &_title {
+        font-family: 'Lato', sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        margin: 0 auto;
+        text-transform: uppercase;
+        color: #333333;
+        letter-spacing: 9px;
+        align-self: flex-start;
+  }
+  &_main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_styleline {
+        border: none;
+        background-color: #ff4200; 
+        height: 2px; 
+        width: 100%;
+        margin-top: 30px;
+  }
+}
+.card_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto 75px;
+    width: 85%;
+}
+.card-body{
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.2);
+  margin: 25px 0;
+  min-height: 515px;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width:768px){
+  .card_container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-body{
+    margin: 25px 10px;
+    width: 45%;
+  }
+}
+@media (min-width:1024px){
+  .card-body{
+    margin: 25px 15px;
+    width: 30%;
+  }
+}
+.content-img{
+  border-bottom: 4px solid #F8864F;
+  height: 200px;
+  overflow: hidden;
+}
+.card-body img{
+  height: auto;
+  object-position: center center;
+  width: 100%;
+}
+.card-body .card-text{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+  min-height: 315px;
+}
+
+@media (min-width:768px){
+  .card-body .card-text{
+    padding-bottom: 25px;
+  }
+}
+@media (min-width:1024px){
+  .card-body .card-text{
+    margin-top: 25px;
+    min-height: 250px;
+    padding-bottom: 0;
+  }
+}
+.card-text p.tag{
+  font-family: 'Lato', sans-serif;
+  font-size: .75rem;
+  color: #ff4200;
+  letter-spacing: 3px;
+  margin-top: 5.5vh;
+  text-transform: uppercase;
+}
+@media (min-width:1024px){
+  .card-text p.tag{
+    margin-top: 3.5vh;
+  }
+}
+.card-text h2{
+  font-size: 1.75rem;
+  margin-top: 25px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.card-text p.text{
+  font-size: .95rem;
+  font-family: 'Lato', sans-serif;
+  margin: 20px auto;
+  text-align: center;
+  width: 85%;
+  line-height: 1.3;
+}
+.card-text a.read-more{
+  border: 2px solid #ff4200;
+  border-radius: 25px;
+  color: #ff4200;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-size: .85rem;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 7.5px 25px;
+  transition: all .5s ease;
+}
+.card-text a.read-more:hover{
+  background-color: #ff4200;
+  color: #FFFFFF;
+  transform: scale(1.15)
+}
+@media(max-width: 768px) {
+    .blog_wrap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

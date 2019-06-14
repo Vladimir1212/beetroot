@@ -1,0 +1,40 @@
+mixin contact()
+ section.contact#contact
+    .layout
+        .contact_wrap
+           .about_pagination
+            .pagination_circle
+            .pagination_circle
+            .pagination_circle
+            .pagination_circle
+            .pagination_circle
+            .pagination_number 06
+            .pagination_circle__active 
+             .pagination_about Contact
+            .pagination_line
+           .contact_main
+            h2.contact_h2 Contact
+             hr.contact_styleline
+            .contact_container
+             .contact_item
+                .icon_wrap
+                 i.fas.fa-envelope-square
+                 .contact_title E-mail
+                  p.contact_text woyaxx@gmail.com
+             .contact_item
+                .icon_wrap
+                 i.fas.fa-phone
+                 .contact_title Phone
+                  p.contact_text +380662122240
+             .contact_item
+                .icon_wrap
+                 i.fab.fa-skype
+                 .contact_title Skype
+                  p.contact_text spartan14
+            .contact_content
+             form.contact_form
+                input.contact_input(size='1', type='text', placeholder='Your Name')
+                input.contact_input(size='1', type='email', name='', id='', placeholder='Your Email')
+                input.contact_input(type='text', placeholder='Your Topic')
+                textarea.contact_input(name='', id='', cols='30', rows='6', placeholder='Your Comment')
+             a.button(href='#') send message
