@@ -1,17 +1,22 @@
 mixin services()
- section.services
+ section.services#services
     .layout
       .services_wrap
         .about_pagination
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#header')
+             .pagination_circle
+            a.pagination(href='#about')
+             .pagination_circle
             .pagination_number 03
             .pagination_circle__active
              .pagination_about Services
             .pagination_line
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#portfolio')
+             .pagination_circle
+            a.pagination(href='#blog')
+             .pagination_circle
+            a.pagination(href='#contact')
+             .pagination_circle
         .services_main
             h2.services_title Services
             hr.services_styleline

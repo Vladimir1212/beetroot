@@ -3,15 +3,20 @@ mixin blog()
     .layout
         .blog_wrap
            .about_pagination
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#header')
+             .pagination_circle
+            a.pagination(href='#about')
+             .pagination_circle
+            a.pagination(href='#services')
+             .pagination_circle
+            a.pagination(href='#portfolio')
+             .pagination_circle
             .pagination_number__black 05
             .pagination_circle__active__black 
              .pagination_about__black Blog
             .pagination_line__black
-            .pagination_circle
+            a.pagination(href='#contact')
+             .pagination_circle
            .blog_main
             h2.blog_title Recent Blog
              hr.blog_styleline

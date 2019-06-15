@@ -3,15 +3,20 @@ mixin portfolio ()
     .layout
         .portfolio_wrap
            .about_pagination
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#header')
+             .pagination_circle
+            a.pagination(href='#about')
+             .pagination_circle
+            a.pagination(href='#services')
+             .pagination_circle
             .pagination_number 04
             .pagination_circle__active 
              .pagination_about Portfolio
             .pagination_line
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#blog')
+             .pagination_circle
+            a.pagination(href='#contact')
+             .pagination_circle
            .portfolio_main
             h2.portfolio_title Portfolio
              hr.portfolio_styleline

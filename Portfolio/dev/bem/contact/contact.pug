@@ -3,11 +3,16 @@ mixin contact()
     .layout
         .contact_wrap
            .about_pagination
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#header')
+             .pagination_circle
+            a.pagination(href='#about')
+             .pagination_circle
+            a.pagination(href='#services')
+             .pagination_circle
+            a.pagination(href='#portfolio')
+             .pagination_circle
+            a.pagination(href='#blog')
+             .pagination_circle
             .pagination_number 06
             .pagination_circle__active 
              .pagination_about Contact
