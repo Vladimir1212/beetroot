@@ -2,7 +2,7 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Portfolio</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
@@ -13,33 +13,35 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="layout">
       <div class="nav_header"><img class="header_logo" src="../dev/img/Logo.png"/>
-        <div class="nav" role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox"/><span></span><span></span><span></span>
-            <ul id="menu"><a href="#">
-                <li class="menu_text">Home</li></a><a href="#about">
-                <li class="menu_text">About</li></a><a href="#portfolio">
-                <li class="menu_text">Portfolio</li></a><a href="#blog">
-                <li class="menu_text">Blog</li></a><a href="#contact">
-                <li class="menu_text">Contact                  </li></a></ul>
+        <div class="menu"><span></span><span></span><span></span></div>
+        <div class="hidden" id="navigation">
+          <div class="nav">
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="header_wrap">
-        <div class="header_pagination">
+        <div class="header_pagination" id="pagination">
           <div class="pagination_number">01</div>
           <div class="pagination_circle__active"> 
             <div class="pagination_about">Home</div>
           </div>
-          <div class="pagination_line"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+          <div class="pagination_line"></div><a class="pagination" href="#about">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#services">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#portfolio">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#blog">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#contact">
+            <div class="pagination_circle"></div></a>
         </div>
         <div class="header_hero">
           <h1 class="header_title">Volodymyr Yakymenko</h1>
@@ -54,17 +56,17 @@
   <section class="about" id="about">
     <div class="layout">
       <div class="about_wrap">
-        <div class="about_pagination">
-          <div class="pagination_circle"></div>
+        <div class="about_pagination"><a class="pagination" href="#header">
+            <div class="pagination_circle"></div></a>
           <div class="pagination_number__black">02</div>
           <div class="pagination_circle__active__black"> 
             <div class="pagination_about__black">About me</div>
           </div>
-          <div class="pagination_line__black"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+          <div class="pagination_line__black"></div><a class="pagination" href="#services">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#portfolio">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#blog">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#contact">
+            <div class="pagination_circle"></div></a>
         </div>
         <div class="about_main">
           <h1 class="about_title">Creative Studio</h1>
@@ -78,20 +80,20 @@
       </div>
     </div>
   </section>
-  <section class="services">
+  <section class="services" id="services">
     <div class="layout">
       <div class="services_wrap">
-        <div class="about_pagination">
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+        <div class="about_pagination"><a class="pagination" href="#header">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#about">
+            <div class="pagination_circle"></div></a>
           <div class="pagination_number">03</div>
           <div class="pagination_circle__active">
             <div class="pagination_about">Services</div>
           </div>
-          <div class="pagination_line"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+          <div class="pagination_line"></div><a class="pagination" href="#portfolio">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#blog">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#contact">
+            <div class="pagination_circle"></div></a>
         </div>
         <div class="services_main">
           <h2 class="services_title">Services</h2>
@@ -123,17 +125,17 @@
   <section class="portfolio" id="portfolio">
     <div class="layout">
       <div class="portfolio_wrap">
-        <div class="about_pagination">
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+        <div class="about_pagination"><a class="pagination" href="#header">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#about">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#services">
+            <div class="pagination_circle"></div></a>
           <div class="pagination_number">04</div>
           <div class="pagination_circle__active"> 
             <div class="pagination_about">Portfolio</div>
           </div>
-          <div class="pagination_line"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+          <div class="pagination_line"></div><a class="pagination" href="#blog">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#contact">
+            <div class="pagination_circle"></div></a>
         </div>
         <div class="portfolio_main">
           <h2 class="portfolio_title">Portfolio
@@ -151,17 +153,17 @@
   <section class="blog" id="blog">
     <div class="layout">
       <div class="blog_wrap">
-        <div class="about_pagination">
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+        <div class="about_pagination"><a class="pagination" href="#header">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#about">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#services">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#portfolio">
+            <div class="pagination_circle"></div></a>
           <div class="pagination_number__black">05</div>
           <div class="pagination_circle__active__black"> 
             <div class="pagination_about__black">Blog</div>
           </div>
-          <div class="pagination_line__black"></div>
-          <div class="pagination_circle"></div>
+          <div class="pagination_line__black"></div><a class="pagination" href="#contact">
+            <div class="pagination_circle"></div></a>
         </div>
         <div class="blog_main">
           <h2 class="blog_title">Recent Blog
@@ -200,12 +202,12 @@
   <section class="contact" id="contact">
     <div class="layout">
       <div class="contact_wrap">
-        <div class="about_pagination">
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
-          <div class="pagination_circle"></div>
+        <div class="about_pagination"><a class="pagination" href="#header">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#about">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#services">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#portfolio">
+            <div class="pagination_circle"></div></a><a class="pagination" href="#blog">
+            <div class="pagination_circle"></div></a>
           <div class="pagination_number">06</div>
           <div class="pagination_circle__active"> 
             <div class="pagination_about">Contact</div>

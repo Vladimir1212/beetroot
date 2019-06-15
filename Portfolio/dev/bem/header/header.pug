@@ -1,36 +1,43 @@
 mixin header()
- header.header
+ header.header#header
     .layout
           .nav_header
             img.header_logo(src='../dev/img/Logo.png')
-            .nav(role='navigation')
-                #menuToggle
-                    input(type='checkbox')
-                    span
-                    span
-                    span
-                    ul#menu
-                        a(href='#')
-                            li.menu_text Home
-                        a(href='#about')
-                            li.menu_text About
-                        a(href='#portfolio')
-                            li.menu_text Portfolio
-                        a(href='#blog')
-                            li.menu_text Blog
-                        a(href='#contact')
-                            li.menu_text Contact                  
+            .menu
+              span
+              span
+              span
+            #navigation.hidden
+              .nav
+                ul
+                  li
+                    a(href='#header') Home
+                  li
+                    a(href='#about') About Me
+                  li
+                    a(href='#services') Services
+                  li
+                    a(href='#portfolio') Portfolio
+                  li
+                    a(href='#blog') Blog
+                  li
+                    a(href='#contact') Contact
           .header_wrap
-           .header_pagination
+           #pagination.header_pagination
             .pagination_number 01
             .pagination_circle__active 
              .pagination_about Home
             .pagination_line
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
-            .pagination_circle
+            a.pagination(href='#about')
+             .pagination_circle
+            a.pagination(href='#services')
+             .pagination_circle
+            a.pagination(href='#portfolio')
+             .pagination_circle
+            a.pagination(href='#blog')
+             .pagination_circle
+            a.pagination(href='#contact')
+             .pagination_circle
            .header_hero
             h1.header_title Volodymyr Yakymenko
             h2.header_subtitle Web developer
