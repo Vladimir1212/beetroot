@@ -160,6 +160,10 @@ form {
         padding: 15px;
         flex-direction: column;
     }
+    .form_mobile {
+        display: flex;
+        flex-direction: column;
+    }
     .header_button {
         margin: 0 auto;
         padding-top: 15px;
