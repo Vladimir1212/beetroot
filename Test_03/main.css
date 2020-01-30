@@ -189,7 +189,6 @@ form {
         text-align: center;
     }
 }
-
 .card {
     background-image: url(img/coverHeadBgrnd@2x.jpg), linear-gradient(113deg, #6190ee, var(--purplish-pink) 98%);
     background-size: cover;
