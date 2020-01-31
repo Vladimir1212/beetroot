@@ -167,6 +167,11 @@ body {
         text-align: center;
     }
 }
+@media (max-width: 486px) {
+    .h2 {
+        padding-top: 1px;
+    }
+}
 .button_demo {
     background: #E91919;
     font-family: Gilroy;
