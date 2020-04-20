@@ -27,6 +27,10 @@ a:hover {
     display: flex;
     align-items: baseline;
 }
+.registration_item {
+    display: flex;
+    align-items: baseline;
+}
 .registration_text {
     font: 400 16px/27px 'Montserrat', sans-serif;
     color: #707070;
